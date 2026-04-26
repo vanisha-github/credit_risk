@@ -229,7 +229,7 @@ export default function App() {
   headers: {
     "Content-Type": "application/json"
   },
-  body: JSON.stringify(data)
+  body: JSON.stringify(payload)
 });
       const data = await res.json();
       setResult(data);
