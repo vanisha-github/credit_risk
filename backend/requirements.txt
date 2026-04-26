@@ -1,7 +1,10 @@
 flask
 flask-cors
-pandas
 numpy
+pandas
 scikit-learn
-lightgbm
+scipy
 joblib
+lightgbm
+shap==0.44.1
+numba
