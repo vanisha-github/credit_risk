@@ -1,0 +1,64 @@
+/* 🌿 Colors */
+:root {
+  --primary: #22c55e;
+  --primary-dark: #16a34a;
+  --bg-light: #f5fff7;
+  --text-dark: #111827;
+  --border: #d1d5db;
+}
+
+/* 🔤 Typography */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+}
+
+/* 🧱 Utility Classes */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+
+/* 🟩 Button Variants */
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* 🧾 Input Base */
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 14px;
+}
+
+/* 🎯 Card Reusable */
+.card-base {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
