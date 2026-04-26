@@ -20,6 +20,12 @@ feature_names = joblib.load("feature_names.pkl")
 explainer = joblib.load("shap_explainer.pkl")
 
 from helper import preprocess_data
+# =========================
+# ROOT ROUTE (IMPORTANT)
+# =========================
+@app.route("/")
+def home():
+    return "Backend is running 🚀"
 
 # =========================
 # ROUTE
@@ -82,4 +88,5 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
